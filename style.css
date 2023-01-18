@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #250821;
+}
+
+.animate-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5000;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.blob:nth-child(2) {
+    filter: blur(50px) brightness(80%);
+
+}
